@@ -1,0 +1,39 @@
+POST
+REGISTER
+URL: https://healthsync-gs.azurewebsites.net/auth/register
+{
+    "login": "NOME",
+    "password": "SENHA",
+    "role": "ADMIN"
+}
+LOGIN
+URL: https://healthsync-gs.azurewebsites.net/auth/login
+    "login": "NOME",
+    "password": "SENHA"
+}
+USUARIO
+URL: https://healthsync-gs.azurewebsites.net/usuario
+{
+    "nm_usuario": "NOME",
+    "ds_email": "EMAIL",
+    "dt_nascimento": "DATA_NASCIMENTO",
+    "ds_senha": "SENHA"
+}
+
+GET
+USUARIO
+URL: https://healthsync-gs.azurewebsites.net/usuario
+
+PUT
+USUARIO
+URL: https://healthsync-gs.azurewebsites.net/usuario/NUMERO USUARIO
+{
+    "nm_usuario": "NOME NOVO",
+    "ds_email": "EMAIL",
+    "dt_nascimento": "DATA_NASCIMENTO",
+    "ds_senha": "SENHA"
+}
+
+DELETE
+USUARIO
+URL: https://healthsync-gs.azurewebsites.net/usuario/NUMERO USUARIO
